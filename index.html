@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game da alexya</title>
+    <title>game da dhiuly</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+</body>
+</html>
+<!doctype html>
+<html lang="pt-BR">
 
-   <div class="wrap">
-       <header>
-           <h1>nome do meu jogo - alexya</h1>
-           <div class="controls">
-               <button id="btnRestart" class="btn">Reiniciar</button>
-               <div class="bar">Pontuação: <span id="score">0</span></div>
-           </div>
-       </header>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hack & Slash — Mini Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-       <div class="game-card">
-           <canvas id="gameCanvas" width="1100" height="620"></canvas>
-           <div class="hub">
-               <div class="left">
-                   <div class="bar">Vida: <span id="hp">100</span></div>
-                   <div class="bar">Wave: <span id="wave">1</span></div>
-               </div>   
-               <div class="right">
-                    <div class="bar">Melhor pontuação: <span id="best">0</span></div>
-               </div>
-           </div>
-        <div class="help">Controles <b>w + A + S + D</b> </div>
-       </div>
-   </div>
-   <script src="script.js"></script> 
- </body>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Hack & Slash — Mini Game</h1>
+            <div class="controls">
+                <button id="btnRestart" class="btn">Reiniciar</button>
+                <div class="bar">Pontuação: <span id="score">0</span></div>
+            </div>
+        </header>
+
+        <div class="game-card">
+            <canvas id="gameCanvas" width="1100" height="620"></canvas>
+
+            <div class="hud">
+                <div class="left">
+                    <div class="bar">Vida: <span id="hp">100</span></div>
+                    <div class="bar">Wave: <span id="wave">1</span></div>
+                </div>
+                <div class="right">
+                    <div class="bar">Melhor: <span id="best">0</span></div>
+                </div>
+            </div>
+
+            <div class="help">Controles: <strong>WASD</strong> mover • <strong>Mouse</strong> mira •
+                <strong>Clique</strong> atacar • <strong>R</strong> reiniciar</div>
+        </div>
+    </div>
+
+    <!-- script carregado no final garante que o canvas existe -->
+    <script src="script.js"></script>
+</body>
+
 </html>

@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         draw() {
             ctx.save(); ctx.translate(this.x, this.y);
             ctx.beginPath(); ctx.ellipse(0, 15, 20, 8, 0, 0, Math.PI * 2); ctx.fillStyle = 'rgba(0,0,0,0.25)'; ctx.fill();
-            ctx.beginPath(); ctx.arc(0, 0, this.r, 0, Math.PI * 2); ctx.fillStyle = '#23a7c4ff'; ctx.fill();
+            ctx.beginPath(); ctx.arc(0, 0, this.r, 0, Math.PI * 2); ctx.fillStyle = '#a6e3a1'; ctx.fill();
             const ang = Math.atan2(input.mouse.y - this.y, input.mouse.x - this.x);
-            ctx.fillStyle = 'rgba(0, 71, 85, 1)'; ctx.beginPath(); ctx.arc(Math.cos(ang) * 6, Math.sin(ang) * 6, 4, 0, Math.PI * 2); ctx.fill();
+            ctx.fillStyle = '#052'; ctx.beginPath(); ctx.arc(Math.cos(ang) * 6, Math.sin(ang) * 6, 4, 0, Math.PI * 2); ctx.fill();
             ctx.restore();
         }
     }
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.r = (type === 'grunt' ? 14 : 22);
             this.speed = (type === 'grunt' ? 80 : 50);
             this.hp = (type === 'grunt' ? 20 : 60);
-            this.color = (type === 'grunt' ? '#e895dfff' : '#e815a5ff');
+            this.color = (type === 'grunt' ? '#ff8b8b' : '#ffb86b');
         }
         update(dt, player) {
             const dx = player.x - this.x, dy = player.y - this.y;
@@ -207,7 +207,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const game = new Game();
     console.log('Hack & Slash: iniciando jogo');
     game.start();
-
-    
 
 });
